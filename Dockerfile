@@ -1,4 +1,4 @@
-FROM ubuntu
-RUN apt update -y
-RUN apt install httpd -y
+FROM amazonlinux
+RUN yum update -y
+RUN yum install httpd -y
 COPY ./index.html /var/www/html/index.html
