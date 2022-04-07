@@ -1,4 +1,2 @@
-FROM amazonlinux
-RUN yum update -y
-RUN yum install httpd -y
+FROM httpd:latest
 COPY ./index.html /var/www/html/index.html
