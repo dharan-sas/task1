@@ -1,4 +1,4 @@
-FROM ubuntu
-RUN apt-get update -y
-RUN apt-get install apache -y
+FROM amazonlinux
+RUN yum update -y
+RUN yum install apache -y
 COPY ./index.html /var/www/html/index.html
