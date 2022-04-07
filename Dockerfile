@@ -1,2 +1,4 @@
-FROM httpd:latest
+FROM ubuntu
+RUN apt update -y
+RUN apt install httpd -y
 COPY ./index.html /var/www/html/index.html
